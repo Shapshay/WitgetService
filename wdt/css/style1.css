@@ -1,0 +1,71 @@
+.ulp-overlay {
+	position: fixed;
+	z-index: 1000000;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+.ulp-window {
+	font-size: 14px;
+	font-family: arial, verdana;
+	position: fixed;
+	z-index: 1000001;
+	text-align: left;
+	display: none;
+}
+.ulp-inline-window {
+	font-size: 14px;
+	font-family: arial, verdana;
+	text-align: left;
+	display: none;
+}
+.ulp-content {
+	position: relative;
+}
+.ulp-layer {
+	position: absolute;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	text-align: justify;
+	line-height: 1.475;
+}
+.ulp-layer img {
+	max-width: 100% !important;
+	min-width: 0px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-ms-box-shadow: none !important;
+	-o-box-shadow: none !important;
+}
+.ulp-buynow-blue, .ulp-buynow-blue:visited {
+	background-color: #019ad2;
+	background-repeat: repeat-x;
+	background-image: linear-gradient(#33bcef,#019ad2);
+	transition-duration: .3s;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bcef',endColorstr='#019ad2',GradientType=0);
+	border: 1px solid #019ad2;
+	width: auto;
+	white-space: nowrap;
+	height: auto;
+	display: inline-block;
+	padding: 5px 20px;
+	border-radius: 5px;
+	margin: 0;
+	box-shadow: none;
+}
+.ulp-buynow-blue:hover, .ulp-buynow-blue:active {
+	background-color: #0271bf;
+	background-repeat: repeat-x;
+	background-image: linear-gradient(#2daddc,#0271bf);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2daddc',endColorstr='#0271bf',GradientType=0);
+	box-shadow: none;
+}

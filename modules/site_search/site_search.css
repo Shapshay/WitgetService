@@ -1,0 +1,20 @@
+/* Site Search Module */
+.search_table {	background-color: #e5ecfe; filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#86cff0', EndColorStr='#f4f9fd') }
+
+.search_number { font-size: 12px; font-weight: bold; color: #619cac; }
+a.search_title { font-size: 12px; color: #000000; text-decoration: underline; font-weight: bold; }
+a.search_title:hover { font-size: 12px; color: #000000; text-decoration: none; font-weight: bold; }
+a.search_more { font-size: 12px; color: #000000; text-decoration: underline; font-weight: bold; }
+a.search_more:hover { font-size: 12px; color: #000000; text-decoration: underline; font-weight: bold; }
+
+.search_date { font-size: 11px; font-weight: bold; color: #619cac; }
+.search_matches { font-size: 11px; color: #000000; }
+
+.search_chapter { font-size: 12px; font-weight: bold; color: #000000; }
+a.chapter_url { font-size: 12px; color: #000000; text-decoration: underline; }
+a.chapter_url:hover { font-size: 12px; color: #000000; text-decoration: none; }
+
+.search_highlight { color: #000000; font-weight: bold; border-bottom: 1px dotted #000000; background-color: #cccccc; padding-left: 3px; padding-right: 2px; }	
+.search_total { font-size: 12px; font-weight: bold; color: #619cac; }
+
+.search_textbox { height: 20px; font-size: 12px; border-left: 1px solid #67b7dc; border-top: 1px solid #67b7dc; border-bottom: 1px solid #d5edfc; border-right: 1px solid #d5edfc; color: #0a63b9; }

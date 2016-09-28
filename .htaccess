@@ -1,0 +1,28 @@
+#DirectoryIndex index index.php index.html
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.witgetservice.com$ [NC]
+RewriteRule ^(.*)$ http://witgetservice.com/$1 [R=301,L]
+</IfModule>
+
+ErrorDocument 404 /404
+
+
+
+php_flag display_errors on
+php_value error_reporting E_ALL 
+php_value upload_max_filesize 300M
+php_value post_max_size 300M
+
+# устанавливаем по умолчанию utf-8
+AddDefaultCharset utf-8
+
+# включаем мод реврайт
+RewriteEngine on
+#пишем условия срабатывания - всегда, кроме файлов (реально существующих на сервере)
+RewriteCond %{REQUEST_FILENAME} !-f
+# и директорый
+RewriteCond %{REQUEST_FILENAME} !-d
+# перебрасывать все на нашу точку входа, запихнув параметры запроса в переменную sefq
+RewriteRule ^(.*)$ index.php?sefq=$1 [L,QSA]

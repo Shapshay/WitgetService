@@ -1,0 +1,1 @@
+<p><a href="{LINK_URL}" target="_blank">{LINK_TITLE}</a> ({LINK_URL})
