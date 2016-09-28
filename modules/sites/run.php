@@ -9,7 +9,7 @@
 	));
 	# MAIN #################################################################################
 	
-	$script_code = '<iframe name="widget_iframe" src="http://witgetservice.com/statistic/wdt.js?u='.U_ID.'" width="0" height="0"></iframe><ilayer  id="widget_div"></ilayer><script type="text/javascript">function dhtmlLoadScript(b){var a=document.createElement("script");a.src=b;a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a)}onload=function(){dhtmlLoadScript("http://witgetservice.com/wdt/js/jquery.slick-modals.min.js");dhtmlLoadScript("http://witgetservice.com/s_widget/wdt.js?u='.U_ID.'")};</script>';
+	$script_code = '<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script><iframe name="widget_iframe" src="http://witgetservice.com/statistic/wdt.js?u='.U_ID.'" width="0" height="0"></iframe><ilayer  id="widget_div"></ilayer><script type="text/javascript">function dhtmlLoadScript(b){var a=document.createElement("script");a.src=b;a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a)}onload=function(){dhtmlLoadScript("http://witgetservice.com/wdt/js/jquery.slick-modals.min.js");dhtmlLoadScript("http://witgetservice.com/s_widget/wdt.js?u='.U_ID.'")};</script>';
 	if(isset($_POST['VerSite'])){
 		$s_id = SuperSaveInt($_POST['VerSite']);
 		$sql = "SELECT domen FROM sites WHERE id = ".$s_id." LIMIT 1";
